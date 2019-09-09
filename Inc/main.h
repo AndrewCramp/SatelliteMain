@@ -73,6 +73,8 @@ extern "C" {
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
 RTC_HandleTypeDef hrtc;
+I2C_HandleTypeDef hi2c1;
+I2C_HandleTypeDef hi2c2;
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/

@@ -1,12 +1,12 @@
 #include "main.h"
 #include "Satellite.h"
 #include "Camera.h"
-
+#include "main.h"
 int CAM_write(CAMERA_REGISTER reg, uint8_t pValue){
-	while(HAL_I2C_IsDeviceReady(phi2c, WRITE_ID,1,0xff)!= HAL_OK){
+	while(HAL_I2C_IsDeviceReady(&hi2c2, WRITE_ID,1,0xff)!= HAL_OK){
 		HAL_Delay(50);
 	}
-	if(HAL_I2C_Mem_Write(phi2c, WRITE_ID, reg,sizeof(reg), &pValue, sizeof(pValue),0xff) != HAL_OK){
+	if(HAL_I2C_Mem_Write(&hi2c2, WRITE_ID, reg,sizeof(reg), &pValue, sizeof(pValue),0xff) != HAL_OK){
 		//error handling
 		for(;;);
 		return 0;
@@ -16,7 +16,7 @@ int CAM_write(CAMERA_REGISTER reg, uint8_t pValue){
 
 signed char CAM_read(CAMERA_REGISTER reg){
 	uint8_t dataBuffer = 0;
-	if(HAL_I2C_Mem_Read(phi2c, READ_ID, reg, sizeof(reg), &dataBuffer, sizeof(uint8_t),0xff) != HAL_OK){
+	if(HAL_I2C_Mem_Read(&hi2c2, READ_ID, reg, sizeof(reg), &dataBuffer, sizeof(uint8_t),0xff) != HAL_OK){
 		//error handling
 		return 0;
 	}

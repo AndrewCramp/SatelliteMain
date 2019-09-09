@@ -1,0 +1,3 @@
+Camera.c:5:5:CAM_write	40	static
+Camera.c:17:13:CAM_read	32	static
+Camera.c:26:6:CAM_Image_Windowing	0	static
