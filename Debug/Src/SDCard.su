@@ -1,0 +1,9 @@
+SDCard.c:141:6:getFileSize.part.3	568	static
+SDCard.c:8:5:SD_Config	16	static
+SDCard.c:23:5:createFile	16	static
+SDCard.c:40:6:writeData	32	static
+SDCard.c:56:6:formattedWriteInt	32	static
+SDCard.c:78:6:formattedWriteFloat	96	static
+SDCard.c:123:6:writeString	24	static
+SDCard.c:141:6:getFileSize	8	static
+SDCard.c:156:5:initFileSystem	8	static

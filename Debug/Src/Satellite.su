@@ -1,0 +1,9 @@
+Satellite.c:6:6:CAN_Config_Filter	48	static
+Satellite.c:23:6:CAN_Transmit	8	static
+Satellite.c:31:6:CAN_Receive	8	static
+Satellite.c:41:5:twosCompliment	8	static
+Satellite.c:50:5:intToString	48	static
+Satellite.c:75:6:floatToString	48	static
+Satellite.c:96:6:logGravData	48	static
+Satellite.c:114:6:logGyroData	48	static
+Satellite.c:105:6:logAccelData	0	static
